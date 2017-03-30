@@ -1,0 +1,26 @@
+@import "base";
+
+.user-item{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction:row;
+  padding: 0.4rem;
+  background: #fff;
+  justify-content: space-between;
+  margin-bottom: px2rem(20px , $base-font-size);
+}
+
+.user-item-title{
+  flex-grow: 3;
+}
+
+.user-item-icon{
+  @include px2px('font-size' , 24);
+  width: px2rem( 20px , $base-font-size);
+  color: #666;
+  margin-right: px2rem(10px , $base-font-size);
+  margin-top: px2rem(5px , $base-font-size);
+}
+.user-item-icon i{
+  @include px2px('font-size' , 24);
+}

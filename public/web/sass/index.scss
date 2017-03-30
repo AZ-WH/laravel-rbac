@@ -1,0 +1,224 @@
+@import "base";
+
+header{
+  text-align: center;
+  height : px2rem(66 , $base-font-size);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #333;
+  @include px2px('font-size', 24);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+#nav-button{
+  color: #333;
+  height: 100%;
+  width: px2rem(90 , $base-font-size);
+  border: none;
+  position: absolute;
+  top:0;
+  left: 0;
+  @include px2px('font-size' , 36);
+  background-color: #fff;
+}
+#nav-button i{
+  @include px2px('font-size' , 36);
+}
+#nav{
+  width: 2rem;
+  position: fixed;
+  top: 44px;
+  left: 0;
+  z-index: 999;
+  color: #fff;
+  text-align: center;
+  display: none;
+}
+#nav::after{
+  content: '';
+  background-color: #fff;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index: -1;
+  filter:alpha(opacity=80);
+  -moz-opacity:0.8;
+  opacity:0.8;
+  width: 100%;
+  height: 100%;
+}
+#nav a{
+  color: #fff;
+  text-decoration:none;
+}
+#nav li{
+  padding: 0.2rem;
+}
+
+#content{
+  position: absolute;
+  top:px2rem(76px , $base-font-size);
+  margin: 0 auto;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+  overflow-y : scroll;
+  height: px2rem(1040px , $base-font-size);
+}
+
+#content ul{
+  margin: 0 auto;
+  margin-left: px2rem(10px , $base-font-size);
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#content ul li{
+  width: px2rem(360px , $base-font-size);
+  height: px2rem(360px , $base-font-size);
+  overflow: hidden;
+  margin-bottom: px2rem(10px , $base-font-size);
+}
+#content ul::after{
+  content: '';
+  clear: both;
+  display:block;
+}
+
+.fruit-list{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.fruit-list a{
+  display: block;
+  height: 4.95rem;
+  width: 100%;
+}
+.fruit-list img{
+  width: 100%;
+  height: 100%;
+}
+.fruit-info{
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  zoom:1;
+  position:absolute;
+  z-index: 0;
+  height: px2rem(60px , $base-font-size);
+  display:flex;
+  justify-content: space-between;
+}
+.fruit-info::after{
+  content: '';
+  background-color: #000;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index: -1;
+  filter:alpha(opacity=40);
+  -moz-opacity:0.4;
+  opacity:0.4;
+  width: 100%;
+  height: 100%;
+}
+.fruit-title {
+  height: px2rem(60px , $base-font-size);
+  overflow: hidden;
+  line-height: px2rem(60px , $base-font-size);
+  @include px2px('font-size' , 24);
+  padding-left: px2rem(5px , $base-font-size);
+}
+
+.small{
+  font-size: 0.1rem;
+}
+
+.fruit-cart-action{
+  width: 100%;
+  height: 100%;
+}
+
+.fruit-cart{
+  //border: 1px solid #ea4f55;
+  -webkit-border-radius:100%;
+  border-radius:100%;
+  -moz-border-radius:100%;
+  background-color:#ea4f55;
+  width: px2rem(60px , $base-font-size);
+  height: px2rem(60px , $base-font-size);
+  line-height: px2rem(60px , $base-font-size);
+  text-align: center;
+  color: #fff;
+  @include px2px('font-size' , 28);
+  margin-right: px2rem(5px , $base-font-size);
+}
+.fruit-cart i{
+  @include px2px('font-size' , 36);
+  color: #fff;
+}
+
+.price{
+  position: absolute;
+  z-index: 0;
+  bottom: 0.9rem;
+  left: 0;
+  padding: 0.1rem;
+  @include px2px('font-size' , 18);
+  color: #fff;
+}
+
+.price::after{
+  content: '';
+  background-color: #000;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index: -1;
+  filter:alpha(opacity=50);
+  -moz-opacity:0.5;
+  opacity:0.5;
+  width: 100%;
+  height: 100%;
+}
+
+.buy-num{
+  position: absolute;
+  right: 0;
+  top: 0.2rem;
+  padding: 0.1rem 0.2rem;
+  text-align: center;
+  color: #fff;
+  z-index: 0;
+  font-size: 12px;
+}
+.buy-num::after{
+  content: '';
+  background-color: #ea4f55;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index: -1;
+  filter:alpha(opacity=80);
+  -moz-opacity:0.8;
+  opacity:0.8;
+  width: 100%;
+  height: 100%;
+}
+
+#title i{
+  @include px2px('font-size' , 24);
+}
+
+
+.ml2{
+  margin-left: px2rem(10);
+}

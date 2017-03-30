@@ -1,0 +1,115 @@
+.address{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction:row;
+    justify-content: space-between;
+    padding: 0.4rem 0 0.4rem 0.8rem;
+    background: #fff;
+}
+.address-left{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    flex-grow: 2;
+    font-size: 16px;
+    justify-content: space-between;
+}
+.address-left-content{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+}
+
+.address-left-tel{
+    margin-left:0.4rem;
+}
+
+.address-right{
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.5rem;
+    color: #333;
+    border-left: 1px solid #f5f5f5;
+    padding: 0 0.2rem;
+}
+
+.new-build-address{
+    border: none;
+    background: #ea4f55;
+    height: 44px;
+    color: #fff;
+    margin:0.4rem;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 44px;
+    font-size: 18px;
+}
+
+
+
+.address-add{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    font-size: 16px;
+    justify-content: space-between;
+}
+.address-add-item{
+   display: flex;
+    display: -webkit-flex;
+    flex-direction:row;
+    padding: 0.4rem 0 0.4rem 0.4rem;
+    background: #fff; 
+}
+.address-add-item-juxb{
+    justify-content: space-between;
+}
+
+.address-add-icon{
+    font-size: 18px;
+    width: 20px;
+    color: #666;
+    margin-right: 0.1rem;
+}
+.address-add-input{
+    font-size: 14px;
+    border: none;
+}
+.address-add-select{
+    -webkit-appearance: none;
+    border: 0px;
+    background-color: #fff;
+    color: #666;
+    width: 2.1875rem;
+    text-align: left;
+    padding: 0rem;
+}
+
+.address-add-name , .address-add-sex{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+}
+
+.address-add-sex div{
+    margin-right: 0.4rem;
+    color: #666;
+}
+
+.build-address{
+    border: none;
+    background: #ea4f55;
+    height: 44px;
+    color: #fff;
+    margin:0.4rem;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 44px;
+    font-size: 18px;
+}
