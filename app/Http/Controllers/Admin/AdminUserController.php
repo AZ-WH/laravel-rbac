@@ -25,7 +25,7 @@ class AdminUserController extends AdminController {
         parent::__construct();
         $this->_response['_active']['_model']       = 'auth';
         $this->_response['_active']['_action']      = '';
-        $this->_response['_title']                  = '小一农货-账号管理';
+        $this->_response['_title']                  = '账号管理';
     }
 
 

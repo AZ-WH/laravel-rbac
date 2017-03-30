@@ -11,45 +11,11 @@
 */
 
 Route::group(['namespace' => 'Admin' , 'prefix' => 'admin' ] , function(){
-//菜单管理
 
-//    Route::get('menu' , 'MenuController@getAdminMenuList');
-//    Route::get('menu/menu-list-by-father' , 'MenuController@getMenuListByFather');
-//    Route::post('menu/add-menu' , 'MenuController@postAddMenu');
-//    Route::post('menu/update-menu' , 'MenuController@postUpdateMenu');
-//    Route::get('menu/menu-info' , 'MenuController@getMenuInfo');
-//    Route::get('menu/del-menu' , 'MenuController@getDelMenu');
     Route::group(['middleware' => 'AdminAuth'] , function (){
-        //供应商start
-        Route::get('manufactor' , 'ManufactorController@getList');
-        //供应商end
 
-        //店铺start
-        Route::get('store' , 'StoreController@getList');
-        //店铺end
-
-        //订单start
         Route::get('index' , 'IndexController@index');
-        Route::get('order' , 'OrderController@getList');
-        //订单end
 
-
-
-        //商品start
-        Route::get('goods' , 'GoodsController@getList');
-        Route::get('goods/info/{id}' , 'GoodsController@getGoods');
-        Route::get('goods/add' , 'GoodsController@add');
-        Route::post('goods/add' , 'GoodsController@doAdd');
-        Route::post('goods/update' , 'GoodsController@update');
-        Route::get('goods/delete/{gId}' , 'GoodsController@delete');
-        //商品end
-
-//    Route::get('wechat' , 'WechatController@getList');
-//    Route::get('wechat/add' , 'WechatController@add');
-//    Route::post('wechat/add' , 'WechatController@doAdd');
-//    Route::get('wechat/setting' , 'WechatController@setting');
-
-        Route::post('upload/img/{owner}' , 'UploadController@uploadImg');
 
         //权限节点start
         Route::get('/permission' , 'AdminPermissionController@getList');

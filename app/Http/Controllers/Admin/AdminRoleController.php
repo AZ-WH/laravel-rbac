@@ -17,7 +17,7 @@ class AdminRoleController extends AdminController{
         parent::__construct();
         $this->_response['_active']['_model']       = 'auth';
         $this->_response['_active']['_action']      = '';
-        $this->_response['_title']                  = '小一农货-角色管理';
+        $this->_response['_title']                  = '角色管理';
     }
     
     /**

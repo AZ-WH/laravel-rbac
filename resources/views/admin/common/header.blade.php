@@ -45,7 +45,7 @@
             </button>
 
             <!--logo start-->
-            <a href="index.html" class="logo" >小一<span>农货</span></a>
+            <a href="index.html" class="logo" >LARAVEL<span>RBAC</span></a>
             <!--logo end-->
            @include('admin.common.menu')
 
@@ -56,7 +56,7 @@
                     <li class="dropdown">
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             {{--<img alt="" src="img/avatar1_small.jpg">--}}
-                            <span class="username" id="userinfo">吴辉</span>
+                            <span class="username" id="userinfo">username</span>
                             <b class="caret"></b>
                         </a>
                     </li>

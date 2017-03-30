@@ -17,7 +17,7 @@ class AdminPermissionController extends AdminController{
         parent::__construct();
         $this->_response['_active']['_model']       = 'auth';
         $this->_response['_active']['_action']      = '';
-        $this->_response['_title']                  = '小一农货-权限节点';
+        $this->_response['_title']                  = '权限节点';
     }
 
     public function getList(){

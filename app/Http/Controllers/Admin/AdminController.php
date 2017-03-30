@@ -11,7 +11,7 @@ class AdminController extends Controller {
     public function __construct()
     {
         $this->_response                            = array();
-        $this->_response['_title']                  = '小一农货';
+        $this->_response['_title']                  = 'LARAVEL-RBAC';
         $this->_response['_active']                 = array();
         $this->_response['_active']['_model']       = '';
         $this->_response['_active']['_action']      = '';
